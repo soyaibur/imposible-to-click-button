@@ -9,8 +9,14 @@ evilButton.addEventListener("click",()=>{
 document.addEventListener("click",(e)=>{
    const x = e.pageX
    const y = e.pageY
-   var buttonBox = evilButton.getBoundingClientRect()
-   
+   const buttonBox = evilButton.getBoundingClientRect()
+    
+    const horizontalDistanceFrom = distanceFromCenter(buttonBox.x,x,buttonBox.width)
+    const verticalDistanceFrom = distanceFromCenter(buttonBox.y,y,buttonBox.height)
 })
+
+function distanceFromCenter(boxPosition,mousePosition, boxSize){
+    return boxPosition - mousePosition + boxSize / 2
+}
 
 
