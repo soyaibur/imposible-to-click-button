@@ -1,0 +1,16 @@
+body{
+    margin:0;
+    padding:0;
+}
+#evil-button{
+   padding: 1rem 2rem;
+   background-color: burlywood;
+   font-family: 'Times New Roman', Times, serif;
+   border: 1px solid rgb(245, 140, 21);
+   font-size: 2rem;
+   color:cadetblue;
+   font-weight: bold;
+   cursor:pointer;
+   border-radius: 3px;
+
+}
